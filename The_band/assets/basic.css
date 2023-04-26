@@ -1,0 +1,454 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Common */
+.clear {
+  clear: both;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  /* padding: 0 8px; */
+  padding-left: 8px;
+  padding-right: 8px;
+  float: left;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-third {
+  width: calc(100% / 3);
+}
+
+.btn {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+/* End Common */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000;
+  width: 100%;
+  height: 46px;
+}
+
+.nav {
+  /* float: left; */
+  display: inline-block;
+}
+
+.nav > li{
+  display: inline-block;
+}
+
+.nav li{
+  list-style: none;
+  position: relative;
+}
+
+.nav > li > a {
+  color: #fff;
+  padding: 0 24px;
+  line-height: 46px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+}
+.sub-nav li:hover a,
+.nav > li:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+}
+
+.sub-nav li a {
+  color: #000;
+  line-height: 38px;
+  padding: 0 12px;
+}
+
+.nav li:hover .sub-nav {
+  display: block;
+  /* z-index: 1; */
+}
+
+.search-btn {
+  color: #fff;
+  float: right;
+  line-height: 46px;
+  padding: 0 24px;
+}
+
+.search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+.slider {
+  background: url('./img/slider/silder_2.jpg') top center / cover no-repeat;
+  padding-top: 50%;
+  position: relative;
+}
+
+.slider-content {
+  position: absolute;
+  bottom: 46px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.slider-heading {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.slider-sub {
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+.section-content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0 112px;
+}
+
+.section-heading {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+.section-sub {
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.band-decs {
+  text-align: justify;
+  line-height: 1.5;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.members-list {
+  padding: 32px 0;
+}
+
+.member-item {
+  float: left;
+  text-align: center;
+  width: calc(100% / 3);
+}
+
+.member-name {
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.member-image {
+  width: 154px;
+  border-radius: 5px;
+}
+
+.tour-block {
+  background-color: #000;
+  color: #fff;
+}
+
+.tickets-list {
+  background-color: #fff;
+}
+
+.tickets-list li {
+  padding: 13px 16px;
+  list-style: none;
+  color: #757575;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sold-out {
+  color: #fff;
+  background-color: #f44336;
+  padding: 4px 8px;
+  margin-left: 16px;
+}
+
+.quantity {
+  float: right;
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+  margin-right: 16px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+.places-list {
+  /* margin: 32px -8px 0px; */
+  margin-top: 32px;
+  /* padding-bottom: 48px; */
+}
+
+.place-item {
+  /* padding: 0 8px;
+  float: left; */
+  /* width: calc(100% / 3); */
+}
+
+.place-image {
+  display: block;
+  width: 100%;
+}
+
+.place-image:hover {
+  opacity: 0.7;
+}
+
+.place-content {
+  background-color: #fff;
+  color: #000;
+  padding: 16px;
+}
+
+.place-heading {
+  /* margin: 15px 0; */
+  font-size: 15px;
+}
+
+.place-date {
+  margin: 15px 0;
+  color: #757575;
+}
+
+.place-decs {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: #fff;
+  position: relative;
+  width: 900px;
+  min-height: 200px;
+}
+
+.modal-close {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.modal-header {
+  color: #fff;
+  background-color: #009688;
+  font-size: 30px;
+  /* margin: 10px 0; */
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-bag {
+  margin-right: 20px;
+}
+
+.modal-body {
+  margin: 16px;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 24px;
+}
+
+.pay-btn {
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #009688;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pay-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.modal-footer {
+  float: right;
+  margin: 0 16px 16px 0;
+}
+
+.contact-container {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.contact-info i {
+  width: 30px;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.form-control {
+  outline: none;
+  padding: 11px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* .form-submit-btn {
+  border: none;
+  padding: 12px 22px;
+  float: right;
+  color: #fff;
+  background-color: #000;
+} */
+
+.map-section img {
+  width: 100%;
+}
+
+.footer {
+  padding: 64px 16px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.socials-list a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.copyright a:hover,
+.socials-list a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.copyright a,
+.copyright {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 15px;
+  font-size: 15px;
+}

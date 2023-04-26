@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <ul class="nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">Band</a></li>
+        <li><a href="">Tour</a></li>
+        <li><a href="">Contact</a></li>
+        <li>
+          <a href="">More
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="sub-nav">
+            <li><a href="">Merchandis</a></li>
+            <li><a href="">Extras</a></li>
+            <li><a href="">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="search">
+        <i class="search-item fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <div id="slider">
+      <div class="slider-content">
+        <h2 class="slide-heading">New York</h2>
+        <p class="sub-heading">
+          The atmosphere in New York is lorem ipsum.
+        </p>
+      </div>
+    </div>
+    <div id="content">
+      <!-- The Band Area -->
+      <div class="band-block">
+        <div class="section-content">
+          <h2 class="section-title">THE BAND</h2>
+          <p class="section-decs">We love music</p>
+          <p class="band-content">
+            This site uses third-party website tracking technologies to provide and continually improve our services, and to display advertisements according to users' interests. I agree and may revoke or change my consent at any time with effect for the future.This site uses third-party website tracking technologies to provide and continually improve our services, and to display advertisements according to users' interests. I agree and may revoke or change my consent at any time with effect for the future.This site uses third-party website tracking technologies to provide and continually improve our services, and to display advertisements according to users' interests. I agree and may revoke or change my consent at any time with effect for the future.
+          </p>
+          <div class="members-list">
+            <div class="member-item">
+              <h3 class="member-name">Suga</h3>
+              <img class="member-img" src="./assets/img/band-member/member1.jpg" alt="">
+            </div>
+            <div class="member-item">
+              <h3 class="member-name">Yoon Gi</h3>
+              <img class="member-img" src="./assets/img/band-member/member2.jpg" alt="">
+            </div>
+            <div class="member-item">
+              <h3 class="member-name">Agust D</h3>
+              <img class="member-img" src="./assets/img/band-member/member3.jpg" alt="">
+            </div>
+            <div class="clear"></div>
+        </div>
+        </div>
+      </div>
+      <!-- Tour Area -->
+      <div class="tour-block">
+        <div class="section-content">
+          <h2 class="section-title">TOUR DATE</h2>
+          <p class="section-decs">Remember to book your ticket!</p>
+          <ul class="tickets-list">
+            <li>September <span class="sold-out">Sold-Out</span></li>
+            <li>October <span class="sold-out">Sold-Out</span></li>
+            <li>November <span class="quantity">3</span></li>
+          </ul>
+          <!-- Place area -->
+          <div class="places-list">
+            <div class="place-item">
+              <div class="img-content1 place-image"></div>
+              <div class="place-content">
+                <h3 class="place-title">New York</h3>
+                <p class="place-date">Fri 27 Nov 2016</p>
+                <p class="place-decs">
+                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button class="buy-bnt js-buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="place-item">
+              <div class="img-content2 place-image"></div>
+              <div class="place-content">
+                <h3 class="place-title">New York</h3>
+                <p class="place-date">Fri 27 Nov 2016</p>
+                <p class="place-decs">
+                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button class="buy-bnt js-buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="place-item">
+              <div class="img-content3 place-image"></div>
+              <div class="place-content">
+                <h3 class="place-title">New York</h3>
+                <p class="place-date">Fri 27 Nov 2016</p>
+                <p class="place-decs">
+                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button class="buy-bnt js-buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+      <!-- Contact area -->
+      <div class="contact-block">
+        <div class="section-content">
+          <h2 class="section-title">CONTACT</h2>
+          <p class="section-decs">Fan? Drop a noted!</p>
+        </div>  
+      </div>
+      
+    </div>
+    <div id="footer">
+
+    </div>
+  </div>
+  <div class="modal js-modal">
+    <div class="modal-container">
+      <div class="modal-close js-modal-close">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      <header class="modal-header">
+        <i class="icon-bag fa-solid fa-suitcase"></i>
+        Tickets
+      </header>
+      
+      <div class="modal-body">
+        <label for="quantity" class="modal-label">
+          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+          Tickets, $15 per person
+        </label>
+        <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+        
+        <label for="send-to" class="modal-label">
+          <i class="fa-solid fa-user"></i>
+          Send to
+        </label>
+        <input id="send-to" type="text" class="modal-input" placeholder="Enter email...">  
+        
+        
+        <button id="buy-ticket">
+          Pay  <i class="fa-solid fa-check"></i>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <p class="modal-help">Need <a href="">Help?</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+
+    const buyBtns = document.querySelectorAll('.js-buy-ticket');
+
+    const modal = document.querySelector('.js-modal');
+    const closeModal = document.querySelector('.js-modal-close');
+
+
+    function showBuyTickets () {
+      modal.classList.add('open');
+    }
+
+    function hideBuyTickets () {
+      modal.classList.remove('open');
+    }
+
+    for (const buyBtn of buyBtns) {
+      buyBtn.addEventListener('click', showBuyTickets);
+    }
+
+    closeModal.addEventListener('click', hideBuyTickets);
+
+  </script>
+</body>
+</html>
